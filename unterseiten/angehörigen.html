@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="google-site-verification" content="38cUorPPxWwcVE0V48T6uS_29vdMnRC-0_X_lJaXaU8" />
+        <title>Angehörigen</title> 
+        <link rel="stylesheet" href="../assets/css/style.min.css"> 
+        <script
+                        src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+                    </script>
+       
+    </head>
+    <body>
+        <header>
+            <a class="logo_container"  href="../index.html"></a> <div class="navi_container"> 
+                
+              <div class="hamburg">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+                <nav>
+                <ul class="ul">
+                    <li class="nav_li"><a class="nav_li_a" href="../index.html">Start</a></li>
+                    <li class="nav_li"><a class="nav_li_a" href="../unterseiten/aktuelles.html">Aktuelles</a></li>
+                    <li class="nav_li"><a class="nav_li_a" href="../unterseiten/kontakt.html">Kontakt</a></li>
+                    <li class="nav_li"><a class="nav_li_a" href="../unterseiten/links.html">Links</a></li>
+                    <li class="nav_li"><a class="nav_li_a" href="../unterseiten/angehörigen.html">Angehöriegen</a></li>
+                    
+                </ul>
+            </nav>
+              </div>
+        </header>
+       <div id="page-content">
+        <div class="content-wrap">
+          <div class="backround_container_3"></div>
+            <div class="headline"></div>
+                <div class="headline_text"><h1>Angehörigen Gruppe</h1></div>
+                <div class="angehörigen_text_container">                   
+                    <p><strong> Das Heißt! </strong></p>
+                    <p>Bei uns sitzen Betroffene und Angehörige an einem Tisch, </p>
+
+                    <p>und können sich wärend den Gruppen Treffen über Altagsprobleme und Sorgen austauschen,
+                        so das Verschiedene ansichten zum Tragen kommen und das bei vorhandene Probleme und Sorgen hilfestellung und Anregung zur Bewältigung gegeben werden können.  </p>
+                    
+                    <p><strong> Bin ich Abhängig bzw. Co Abhänig?</strong></p>
+                    
+                    <p>Viele Menschen wissen nicht genau ob sie Abhängig bzw. Co Abhängig sind! Dazu haben wir einen Fragebogen für sie bereitgestellt.</p>
+                    <p>Aus Datenschutz gründen ist der Download als PDF Datei für Sie zur verfügung Gestellt. Und das Ergebniss ist nur für Sie Bestimmt.</p>
+                    
+                    <ol class="angehörigen-ol">
+                    <li class="ol-li"><a href="../assets/documente/angehörigen fragebogen.pdf">Zum Fragebogen PDF</a><div class="ol-li-dreieck"></div></li>
+                   <!--<li class="ol-li"><a href="../unterseiten/formular.html">Online Fragebogen</a></li><div class="ol-li-dreieck"></div>-->
+                </ol>
+                    
+                    
+                <div class="mehr_buttons">
+                    <a class="button_2" href="../unterseiten/info.html">Mehr Lesen</a>
+                </div>
+            </div>
+               
+                <div class="footer_container">
+                    <div class="copy_by">
+                        <div class="copy ">
+                           <p>C</p>
+                        </div>
+                    <div class="mp_crativ">
+                           <p>Trocken Anker 2020</p>
+                        </div>
+                    </div>
+                    <div class="footer_ul">
+                    <li class="footer_li"><a class="footer_li_a"  href="../unterseiten/impressum.html">Impressum  </a></li>
+                    <li class="footer_li"><a class="footer_li_a"  href="../unterseiten/datenschutz.html">Datenschutz </a></li>
+                   </div>
+                </div>
+        </div>
+    </div>              
+    <script src="../assets/js/global.min.js"></script>
+    <script>
+        var hamburger = document.querySelector(".hamburg");
+        hamburger.onclick = function () {
+        if(this.classList.toggle ("checked")){
+            $("nav").toggle("nav");
+        }else{
+            $("nav").css("display","none");
+        }
+        }
+
+    </script>
+    
+    </body>
+    
+</html>

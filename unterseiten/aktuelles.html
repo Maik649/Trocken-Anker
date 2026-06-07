@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="google-site-verification" content="38cUorPPxWwcVE0V48T6uS_29vdMnRC-0_X_lJaXaU8" />
+        <title>Aktuelles</title> 
+        <link rel="stylesheet" href="../assets/css/style.min.css"> 
+        <script
+                        src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+                    </script>
+        
+    </head>
+    <body>
+        <header>
+            <a class="logo_container"  href="../index.html"></a> <div class="navi_container"> 
+                <div class="hamburg">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+    
+                <nav>
+                    <ul class="ul">
+                        <li class="nav_li"><a class="nav_li_a" href="../index.html">Start</a></li>
+                        <li class="nav_li"><a class="nav_li_a" href="../unterseiten/aktuelles.html">Aktuelles</a></li>
+                        <li class="nav_li"><a class="nav_li_a" href="../unterseiten/kontakt.html">Kontakt</a></li>
+                        <li class="nav_li"><a class="nav_li_a" href="../unterseiten/links.html">Links</a></li>
+                        <li class="nav_li"><a class="nav_li_a" href="../unterseiten/angehörigen.html">Angehöriegen</a></li>
+                    </ul>
+                </nav>
+              </div>
+                      </header>
+       
+        <div id="page-content">
+            <div class="content-wrap">
+                <div class="backround_container_2"></div>
+                    <div class="headline"></div>
+                     <div class="headline_text"><h1>Aktuelles</h1></div>
+                        <div class="beschreibungs_text_container">
+                            <h3> 1 . Freitags Treffen</h3>
+                            <span class="aktuelles-text">- Derzeit finden durch die Aktuelle Covid 19 Pandemie, keine Treffen des Trocken Anker statt.</span>
+                                <br>
+                                <br>
+                                <span class="aktuelles-text">- Ab wann wieder Treffen statt finden, werden wir rechtzeitig bekannt geben. </span>
+                                <br>
+                                <br>
+                                <span class="aktuelles-text">- Der Trocken Anker wünscht ihnen für diese Zeit Alles Gute.</span>
+
+                        </div>
+                <div class="footer_container">
+                    <div class="copy_by">
+                        <div class="copy ">
+                           <p>C</p>
+                        </div>
+                    <div class="mp_crativ">
+                           <p>Trocken Anker 2020</p>
+                        </div>
+                    </div>
+                    <div class="footer_ul">
+                        <li class="footer_li"><a class="footer_li_a"  href="../unterseiten/impressum.html">Impressum  </a></li>
+                        <li class="footer_li"><a class="footer_li_a"  href="../unterseiten/datenschutz.html">Datenschutz </a></li>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    <script src="../assets/js/global.min.js"></script>
+    <script>
+        var hamburger = document.querySelector(".hamburg");
+        hamburger.onclick = function () {
+        if(this.classList.toggle ("checked")){
+            $("nav").toggle("nav");
+        }else{
+            $("nav").css("display","none");
+        }
+        }
+
+    </script>
+    </body>
+    
+</html>
