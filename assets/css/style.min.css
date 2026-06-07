@@ -5,7 +5,6 @@ body {
 }
 
 h4 {
-
     font-size: 20px;
 }
 
@@ -333,7 +332,6 @@ nav {
 }
 
 .kontakt_ansprechpart_container {
-
     position: relative;
     width: auto;
     height: auto;
@@ -343,7 +341,6 @@ nav {
 }
 
 .person-card-1 {
-
     position: relative;
     margin: 30px 0 0 0;
 }
@@ -439,7 +436,6 @@ ol {
     text-align: center;
     border: 1px solid gainsboro;
     list-style: none;
-
 }
 
 .ol-li:hover .ol-li-dreieck {
@@ -481,7 +477,6 @@ ol {
     box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.75);
-
 }
 
 .info_regeln_container {
@@ -545,7 +540,6 @@ ol {
     transition: 0.35s;
     height: 25px;
     width: 250px;
-
 }
 
 .copy_by {
@@ -679,7 +673,6 @@ ol {
     }
 
     .content-wrap {
-
         text-align: center;
         padding-bottom: 0.0rem;
         margin: 32px 0 0 0;
@@ -816,7 +809,6 @@ ol {
     }
 
     .konatkt_container {
-
         position: absolute;
         margin: 0;
         transform: translate(-50%);
@@ -833,7 +825,6 @@ ol {
     }
 
     .kontakt_ansprechpart_container {
-
         position: relative;
         width: 75%;
         height: auto;
@@ -892,7 +883,6 @@ ol {
         height: 60px;
         width: 100%;
     }
-
 
     .logo_container {
         display: block;
@@ -1046,7 +1036,6 @@ ol {
         border-radius: 5px;
         transition: 0.35s;
         margin-right: 25px;
-
     }
 
     .weiter_butten :hover {
@@ -1056,11 +1045,9 @@ ol {
         color: black;
         border-radius: 5px;
         transition: 0.35s;
-
     }
 
     .mehr_buttons {
-
         margin: 50px 0 0 -100px;
     }
 
@@ -1179,7 +1166,6 @@ ol {
         margin: 0 0 0 3px;
         font-size: 14px;
         font-family: Arial, Helvetica, sans-serif;
-
     }
 
     .mp_crativ p {
@@ -1194,7 +1180,6 @@ ol {
 
 @media only screen and (max-width: 568px) {
     .headline {
-
         position: absolute;
         width: 100px;
         border-top: 5px solid black;
@@ -1294,13 +1279,11 @@ ol {
     }
 
     .kontakt_email_container {
-
         position: relative;
         width: 50%;
         height: 25%;
         top: 25px;
         left: 45px;
-
     }
 
     .mehr_buttons {
@@ -1371,7 +1354,6 @@ ol {
         box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.75);
         -webkit-box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.75);
-
     }
 
     .ol-li {
@@ -1517,7 +1499,6 @@ ol {
         transition: 0.35s;
         height: 46px;
         width: 99.5%;
-
     }
 
     .hamburg {
@@ -1571,7 +1552,6 @@ ol {
     }
 
     .footer_container {
-
         height: 100px;
         width: 100%;
         top: 100%;
@@ -1663,7 +1643,6 @@ ol {
         margin: 0 0 0 3px;
         font-size: 14px;
         font-family: Arial, Helvetica, sans-serif;
-
     }
 
     .mp_crativ p {
