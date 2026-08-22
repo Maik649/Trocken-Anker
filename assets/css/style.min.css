@@ -1,16 +1,5 @@
-/*        ------------------ Allgemein Einstellungen ------------------------        */
-body {
-    margin: 0;
-    padding: 0;
-}
-
-h4 {
-    font-size: 20px;
-}
-
-p {
-    font-size: 18px;
-}
+@import url("../css/header.css");
+@import url("../css/footer.css");
 
 .aktuelles-text {
     position: relative;
@@ -19,7 +8,6 @@ p {
 
 .link_container {
     display: block;
-    position: absolute;
     margin: 120px 0 0 30px;
     float: left;
     clear: both;
@@ -29,18 +17,20 @@ p {
 }
 
 #page-content {
-    position: relative;
-    top: -33px;
     min-height: calc(100vh - 140px);
 }
 
 .content-wrap {
     text-align: center;
-    margin: 32px 0 0 0;
+    margin: 0 auto;
+    max-width: 1440px;
+    height: calc(100vh - 90px);
 }
 
 .backround_container {
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: calc(100vh - 130px);
     width: 100%;
     background-image: url("../images/Strant_Anker.jpg");
@@ -50,7 +40,7 @@ p {
 }
 
 .backround_container_2 {
-    position: absolute;
+
     min-height: calc(100vh - 130px);
     width: 50%;
     left: 74.8%;
@@ -61,7 +51,7 @@ p {
 }
 
 .backround_container_3 {
-    position: absolute;
+
     min-height: calc(100vh - 130px);
     width: 50%;
     left: 75.0%;
@@ -72,7 +62,6 @@ p {
 }
 
 .backround_container_4 {
-    position: absolute;
     min-height: calc(100vh - 130px);
     width: 850px;
     top: 50%;
@@ -108,81 +97,6 @@ p {
 
 /*        ------------------ Allgemein Einstellungen ------------------------        */
 /*       ---------------------------- Header -------------------------------        */
-
-header {
-    display: block;
-    position: relative;
-    width: 100%;
-    
-}
-
-header::after{
-    display: block;
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 1px;
-    background-color: rgb(209, 208, 208);
-}
-
-.logo_container {
-    display: block;
-    position: relative;
-    height: 70px;
-    width: 70px;
-    background-image: url('../images/Trocken_Anker.png');
-    background-size: cover;
-    float: left;
-    clear: both;
-    left: 25px;
-    top: 4px;
-    z-index: 100;
-}
-
-nav {
-    position: relative;
-    height: 100px;
-}
-
-.ul {
-    display: block;
-    position: relative;
-    list-style: none;
-    float: right;
-    height: 45px;
-    width: 60%;
-    margin: 18px 2px 0 0;
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
-    text-align: center;
-}
-
-.nav_li {
-    display: inline-block;
-    position: relative;
-    height: 25px;
-    width: 115px;
-    color: black;
-    margin: 10px 0 0 35px;
-    font-size: larger;
-}
-
-.nav_li_a {
-    color: black;
-    text-decoration: none;
-    height: 25px;
-    width: 120px;
-    padding: 4px 20px;
-}
-
-.nav_li_a:hover {
-    color: black;
-    border: 1px solid black;
-    border-radius: 5px;
-    transition: 0.35s;
-    height: 25px;
-    width: 80px;
-}
 
 /*       ----------------------- End Header ------------------------------        */
 /*        ------------------ Start Seiten Content  ------------------------        */
@@ -224,11 +138,20 @@ nav {
     border-radius: 5px;
 }
 
+.info_container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
 /*        ------------------ End Star Seiten Content ------------------------        */
 /*        ------------------ Über Uns Seiten Content ------------------------        */
 
 .headline {
-    position: absolute;
     width: 150px;
     border-top: 5px solid black;
     left: 25px;
@@ -236,13 +159,23 @@ nav {
 }
 
 .headline_text {
+    width: auto;
+    padding: 25px;
+    text-align: left;
+}
+
+.headline_text::after {
     position: absolute;
-    padding-left: 25px;
-    top: 20px;
+    content: "";
+    width: 280px;
+    height: 5px;
+    background-color: black;
 }
 
 .headline_text>h1 {
-    font-size: 45px;
+    font-size: 56px;
+    margin: 10px 0 15px 0;
+    width: auto;
 }
 
 .beschreibungs_text_container {
@@ -319,7 +252,6 @@ nav {
 /*        ------------------ End Über Uns Seiten Content ------------------------        */
 /*        ------------------ Kontakt Seiten Content ------------------------        */
 .konatkt_container {
-    position: absolute;
     margin: 0 0 0 0;
     transform: translate(3%);
     top: 22%;
@@ -475,131 +407,26 @@ ol {
     width: 30%;
     text-align: left;
     padding: 20px 10px 10px 40px;
-    background-color: rgba(217, 220, 223, 0.774);
+    background: linear-gradient(rgba(217, 220, 223, 0.774), rgba(217, 220, 223, 0.774));
     box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.75);
 }
 
 .info_regeln_container {
-    display: block;
-    position: absolute;
     text-align: left;
     width: 90%;
-    left: 50%;
-    top: 15%;
-    transform: translate(-50%);
     padding: 16px;
     height: auto;
-    background-color: rgba(217, 220, 223, 0.774);
+    margin: auto;
+      background-image: linear-gradient(to right, rgba(175, 176, 177, 0.774) , rgba(234, 235, 236, 0.774));
+        
     box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.75);
 }
 
 /*        ------------------------- Footer Content ------------------------------        */
-.footer_container {
-    position: absolute;
-    height: 50px;
-    width: 100%;
-    top: 101%;
-    bottom: 0;
-    background-color: rgba(192, 190, 190, 0.452);
-    text-align: center;
-}
-
-.footer_ul {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 30px;
-    list-style: none;
-    text-align: center;
-}
-
-.footer_li {
-    position: relative;
-    font-size: 16px;
-    margin: 15px;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 5px 10px;
-    float: left;
-    left: 40%;
-    transform: translateX(-50%);
-}
-
-.footer_li_a {
-    display: block;
-    color: black;
-    text-decoration: none;
-    height: 20px;
-    width: 250px;
-}
-
-.footer_li:hover {
-    color: black;
-    border-radius: 5px;
-    transition: 0.35s;
-    height: 20px;
-    width: 250px;
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.575);
-}
-
-.copy_by {
-    display: block;
-    position: absolute;
-    height: 30px;
-    width: 155px;
-    left: 5px;
-    top: 12px;
-    background-color: rgba(116, 114, 114, 0.575);
-    border-radius: 12px;
-    float: left;
-    clear: both;
-}
-
-.copy {
-    display: block;
-    position: relative;
-    height: 11px;
-    width: 13px;
-    border-radius: 50%;
-    border: solid 1px rgb(0, 0, 0);
-    text-align: center;
-    margin-top: 9px;
-    float: left;
-    clear: both;
-    margin-left: 11px;
-}
-
-.copy p {
-    display: inherit;
-    height: 10px;
-    width: 10px;
-    margin: 0px 0 0 0px;
-    padding: 1px 0 0 1px;
-    font-size: 9px;
-}
-
-.mp_crativ {
-    position: relative;
-    height: 15px;
-    width: 100px;
-    margin: 0 0 0 10px;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.mp_crativ p {
-    position: relative;
-    height: 15px;
-    width: 145px;
-    margin: 8px 0 0 0;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 .datenschutz_container {
     display: inline-block;
@@ -627,10 +454,11 @@ ol {
     background-color: rgb(219, 213, 213, 0.65);
     position: absolute;
     text-align: center;
-    height: 250px;
+    height: auto;
     bottom: 0;
     left: 50%;
-    transform: translate(-50%)
+    transform: translate(-50%);
+    padding: 10px;
 }
 
 .cockie_button {
@@ -641,7 +469,6 @@ ol {
     border-radius: 5px;
     background-color: rgba(116, 114, 114, 0.575);
     top: 50px;
-    position: relative;
     left: 45px;
 }
 
@@ -680,7 +507,7 @@ ol {
 @media only screen and (max-width: 1360px) {
     #page-content {
         position: relative;
-        min-height: 100vh;
+        min-height: calc(100vh - 69px);
         top: 60px;
     }
 
@@ -1177,7 +1004,6 @@ ol {
         width: 155px;
         margin: 0 0 0 3px;
         font-size: 14px;
-        font-family: Arial, Helvetica, sans-serif;
     }
 
     .mp_crativ p {
@@ -1186,7 +1012,6 @@ ol {
         width: 145px;
         margin: 8px 0 0 0;
         font-size: 14px;
-        font-family: Arial, Helvetica, sans-serif;
     }
 }
 
@@ -1654,7 +1479,7 @@ ol {
         width: 155px;
         margin: 0 0 0 3px;
         font-size: 14px;
-        font-family: Arial, Helvetica, sans-serif;
+        
     }
 
     .mp_crativ p {
@@ -1663,6 +1488,5 @@ ol {
         width: 145px;
         margin: 8px 0 0 0;
         font-size: 14px;
-        font-family: Arial, Helvetica, sans-serif;
     }
 }
