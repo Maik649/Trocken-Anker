@@ -1,5 +1,9 @@
+@import url("../css/variablen.css");
 @import url("../css/header.css");
 @import url("../css/footer.css");
+@import url("../css/home.css");
+@import url("../css/backgrounds.css");
+@import url("../css/button.css");
 
 .aktuelles-text {
     position: relative;
@@ -16,61 +20,6 @@
     text-align: left;
 }
 
-#page-content {
-    min-height: calc(100vh - 140px);
-}
-
-.content-wrap {
-    text-align: center;
-    margin: 0 auto;
-    max-width: 1440px;
-    height: calc(100vh - 90px);
-}
-
-.backround_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: calc(100vh - 130px);
-    width: 100%;
-    background-image: url("../images/Strant_Anker.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    top: 0px;
-}
-
-.backround_container_2 {
-
-    min-height: calc(100vh - 130px);
-    width: 50%;
-    left: 74.8%;
-    transform: translate(-50%);
-    background-image: url('../images/wallpapers4screen.com-480x800.jpg');
-    /* background-repeat: no-repeat; */
-    background-size: cover;
-}
-
-.backround_container_3 {
-
-    min-height: calc(100vh - 130px);
-    width: 50%;
-    left: 75.0%;
-    top: 0;
-    transform: translate(-50%);
-    background-image: url('../images/Leuchturm .jpg');
-    background-size: cover;
-}
-
-.backround_container_4 {
-    min-height: calc(100vh - 130px);
-    width: 850px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-image: url('../images/list-850\ x\ 647.png');
-    background-size: cover;
-    opacity: 0.1;
-}
 
 .icon_mail {
     position: relative;
@@ -96,87 +45,11 @@
 }
 
 /*        ------------------ Allgemein Einstellungen ------------------------        */
-/*       ---------------------------- Header -------------------------------        */
 
-/*       ----------------------- End Header ------------------------------        */
-/*        ------------------ Start Seiten Content  ------------------------        */
 
-.trocken_a {
-    top: 50px;
-    position: relative;
-    font-size: 24px;
-}
-
-.start_buttons {
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    width: 100%;
-    margin-top: 15%;
-}
-
-.betroffener_button {
-    text-decoration: none;
-    background-color: rgba(236, 229, 167, 0.2);
-    border: 1px solid #000000;
-    color: #000000;
-    display: inline-block;
-    font-size: 1.5em;
-    padding: 8px;
-    height: 30px;
-    width: 130px;
-    border-radius: 5px;
-    transition: 0.35s;
-    margin: 0px 40px 0px 40px;
-}
-
-.betroffener_button:hover {
-    text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.787);
-    border: 2px solid rgb(182, 179, 179);
-    color: black;
-    border-radius: 5px;
-}
-
-.info_container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-/*        ------------------ End Star Seiten Content ------------------------        */
 /*        ------------------ Über Uns Seiten Content ------------------------        */
 
-.headline {
-    width: 150px;
-    border-top: 5px solid black;
-    left: 25px;
-    top: 25px;
-}
 
-.headline_text {
-    width: auto;
-    padding: 25px;
-    text-align: left;
-}
-
-.headline_text::after {
-    position: absolute;
-    content: "";
-    width: 280px;
-    height: 5px;
-    background-color: black;
-}
-
-.headline_text>h1 {
-    font-size: 56px;
-    margin: 10px 0 15px 0;
-    width: auto;
-}
 
 .beschreibungs_text_container {
     text-align: left;
@@ -189,64 +62,6 @@
     -webkit-box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.75);
     background-color: rgba(231, 230, 230, 0.719);
     position: absolute;
-}
-
-.weiter_buttens {
-    text-align: center;
-    margin: 20px 0 0 20px;
-}
-
-.weiter_butten {
-    text-decoration: none;
-    background-color: rgba(236, 229, 167, 0.2);
-    border: 2px solid #000000;
-    color: #000000;
-    width: 150px;
-    display: inline-block;
-    font-size: 21px;
-    clear: both;
-    padding: 8px;
-    border-radius: 5px;
-    transition: 0.35s;
-    margin-right: 25px;
-}
-
-.weiter_butten:hover {
-    text-decoration: none;
-    background-color: rgb(255, 255, 255);
-    border: 2px solid rgb(182, 179, 179);
-    color: black;
-    border-radius: 5px;
-    transition: 0.35s;
-}
-
-.mehr_buttons {
-    position: relative;
-    text-align: center;
-    margin: 40px 11px 8px -150px;
-}
-
-.button_2 {
-    text-decoration: none;
-    background-color: rgba(236, 229, 167, 0.2);
-    border: 2px solid #000000;
-    color: #000000;
-    display: inline-block;
-    font-size: 21px;
-    clear: both;
-    padding: 8px;
-    border-radius: 5px;
-    transition: 0.35s;
-    margin-right: 25px;
-}
-
-.button_2:hover {
-    text-decoration: none;
-    background-color: rgb(255, 255, 255);
-    border-color: rgb(182, 179, 179);
-    color: black;
-    border-radius: 5px;
-    transition: 0.35s;
 }
 
 /*        ------------------ End Über Uns Seiten Content ------------------------        */
@@ -347,6 +162,20 @@ ol {
     -webkit-box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.75);
 }
 
+#info_regeln {
+    list-style: decimal;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    li{
+        margin: 20px 0 20px 0;
+    }    
+}
+
+
 .angehörigen-ol {
     background-color: rgba(217, 220, 223, 0.774);
     margin: 70px 0 0 10px;
@@ -356,6 +185,8 @@ ol {
     list-style: none;
     box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.75);
 
 }
 
@@ -398,29 +229,24 @@ ol {
     text-decoration: none;
 }
 
-.info_text_container {
-    position: absolute;
-    margin: 190px 0 0 30px;
-    left: 15px;
-    clear: both;
-    height: auto;
-    width: 30%;
-    text-align: left;
-    padding: 20px 10px 10px 40px;
-    background: linear-gradient(rgba(217, 220, 223, 0.774), rgba(217, 220, 223, 0.774));
-    box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.75);
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.info_regeln_container {
-    text-align: left;
-    width: 90%;
-    padding: 16px;
+.info_text {
+    width: 100%;
+    max-width: 600px;
+}
+
+.info_text_container {
+    margin: auto 0;
     height: auto;
-    margin: auto;
-      background-image: linear-gradient(to right, rgba(175, 176, 177, 0.774) , rgba(234, 235, 236, 0.774));
-        
+    width: 90%;
+    text-align: left;
+    padding: 28px 20px 20px 40px;
+    background: linear-gradient(rgba(217, 220, 223, 0.774), rgba(217, 220, 223, 0.774));
     box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.75);
@@ -1479,7 +1305,7 @@ ol {
         width: 155px;
         margin: 0 0 0 3px;
         font-size: 14px;
-        
+
     }
 
     .mp_crativ p {

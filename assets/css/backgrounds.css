@@ -1,0 +1,40 @@
+.backround_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: var(--min-height);
+    width: 100%;
+    background-image: url("../images/Strant_Anker.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0px;
+}
+
+.backround_container_2 {
+    min-height: var(--min-height);
+    width: 100%;
+    background-image: url('../images/wallpapers4screen.com-480x800.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.backround_container_3 {
+    min-height: var(--min-height);
+    width: 50%;
+    left: 75.0%;
+    top: 0;
+    transform: translate(-50%);
+    background-image: url('../images/Leuchturm .jpg');
+    background-size: cover;
+}
+
+.backround_container_4 {
+    min-height: var(--min-height);
+    width: 850px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('../images/list-850\ x\ 647.png');
+    background-size: cover;
+    opacity: 0.1;
+}   
