@@ -40,7 +40,7 @@
 .icon_p {
     position: relative;
     height: 35px;
-    width: 370px;
+    width: auto;
     margin: auto 0;
 }
 
@@ -128,10 +128,11 @@ ol {
     display: flex;
     align-items: center;
     text-align: center;
+    flex-direction: column;
     background-color: rgba(217, 220, 223, 0.774);
+    gap: 20px;
     width: 80%;
-    height: 200px;
-    padding: 10px;
+    padding: 25px;
     margin: 0 auto;
     box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 5px 2px 5px 0px rgba(0, 0, 0, 0.75);
@@ -213,16 +214,17 @@ ol {
 }
 
 .info_text_container_2 {
-    margin: auto 15px;
+    margin: auto 0px;
     height: auto;
-    width: 60%;
+    width: 35%;
+    margin-left: 20px;
+    margin-right: auto;
     text-align: left;
     padding: 28px 20px 20px 40px;
     background: linear-gradient(rgba(217, 220, 223, 0.774), rgba(217, 220, 223, 0.774));
     box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.75);
-
 }
 
 /*        ------------------------- Footer Content ------------------------------        */
@@ -250,21 +252,28 @@ ol {
 
 .cockie_container {
     border: solid 1px black;
-    background-color: rgb(219, 213, 213, 0.65);
+    background-color: rgb(165, 165, 165);
     position: absolute;
     text-align: center;
     height: auto;
-    bottom: 0;
+    bottom: 19%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%, 0%);
     padding: 10px;
+}
+
+.cockie_button_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
 }
 
 .cockie_button {
     height: 30px;
     width: 100px;
     padding: 5px;
-    margin-right: 90px;
     border-radius: 5px;
     background-color: rgba(116, 114, 114, 0.575);
     top: 50px;
@@ -303,6 +312,14 @@ ol {
     }
 }
 
+@media only screen and (max-width: 995px) {
+    .info_text_container_2 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
 @media only screen and (max-width: 768px) {
     .info_text_container {
         width: 88%;
@@ -310,6 +327,26 @@ ol {
     }
 
     .ol {
-    flex-direction: column;
+        flex-direction: column;
+    }
 }
+
+
+@media only screen and (max-width: 568px) {
+    .info_text_container_2 {
+        width: 80%;
+        padding: 5px;
+    }
+
+    .cockie_container {
+        border: solid 1px black;
+        background-color: rgb(165, 165, 165);
+        position: absolute;
+        text-align: center;
+        height: auto;
+        bottom: 7%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        padding: 10px;
+    }
 }

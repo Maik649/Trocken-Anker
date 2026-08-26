@@ -164,7 +164,7 @@ nav {
     .nav_li {
         display: block;
         position: relative;
-        height: 45px;
+        height: auto;
         width: 90%;
         background-color: rgba(240, 248, 255, 0.829);
         margin: 0 0 10px 0px;
@@ -207,7 +207,7 @@ nav {
         text-decoration: none;
         text-align: center;
         padding: 7px;
-        height: 45px;
+        height: auto;
         width: 98%;
     }
 
@@ -216,8 +216,8 @@ nav {
         border: 1px solid black;
         border-radius: 15px;
         transition: 0.35s;
-        height: 46px;
-        width: 99.5%;
+        height: auto;
+        width: auto;
     }
 
     .hamburg {
@@ -228,7 +228,7 @@ nav {
         margin-left: auto;
         margin-right: auto;
         left: 135px;
-        top: 10px;
+        top: 5px;
         background: rgb(173, 173, 173);
         border-radius: 4px;
         transition: border-radius .5s;
@@ -275,7 +275,7 @@ nav {
 @media screen and (max-width: 568px) {
     .hamburg {
         left: 70px;
-        top: 10px;
+        top: 5px;
     }
 
     nav {
