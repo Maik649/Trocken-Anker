@@ -4,6 +4,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    word-break: break-word;
 }
 
 #page-content {
@@ -24,13 +25,13 @@ body {
     top: 25px;
 }
 
-.headline_text {
-   width: calc(100% - 50px);
+.headline-text {
+    width: calc(100% - 50px);
     padding: 25px;
     text-align: left;
 }
 
-.headline_text::after {
+.headline-text::after {
     position: absolute;
     content: "";
     width: 100%;
@@ -39,18 +40,18 @@ body {
     background-color: black;
 }
 
-.headline_text>h1 {
+.headline-text>h1 {
     font-size: clamp(30px, 4vw, 56px);
     margin: 10px 0 15px 0;
     width: auto;
 }
 
 h1 {
-    font-size: clamp(30px, 4vw, 56px);
+    font-size: clamp(26px, 4vw, 56px);
 }
 
 h2 {
-    font-size: clamp(25px, 3.4vw, 36px);
+    font-size: clamp(24px, 3.4vw, 36px);
 }
 
 h3 {
@@ -62,15 +63,35 @@ h4 {
 }
 
 p {
-    font-size: clamp(18px, 2.5vw, 18px);
+    font-size: clamp(16px, 2.5vw, 18px);
+
 }
 
+@media screen and (max-width: 768px) {
+    #page-content {
+        height: 100%;
+    }
+
+    .content-wrap {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 1440px;
+        height: stretch;
+    }
+}
 
 @media only screen and (max-width: 568px) {
- .content-wrap {
-    text-align: center;
-    margin: 0 auto;
-    max-width: 1440px;
-    height: 100%;
+
+    .content-wrap {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 1440px;
+        height: 100%;
+    }
 }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .headline-text::after {
+        max-width: 160px !important;
+    }
 }

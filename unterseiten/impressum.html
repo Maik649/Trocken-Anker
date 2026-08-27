@@ -12,23 +12,23 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onload="init()">
     <header class="scroll_nav">
         <div class="header-content-wrap">
-            <a class="logo_container" href="../index.html"></a>
-            <div class="navi_container">
-                <div class="hamburg">
+            <a class="logo-container" href="../index.html"></a>
+            <div class="navi-container">
+                <div class="hamburg" onclick="openNav()">
                     <span class="line"></span>
                     <span class="line"></span>
                     <span class="line"></span>
                 </div>
                 <nav>
                     <ul class="ul">
-                        <li class="nav_li"><a class="nav_li_a" href="../index.html">Start</a></li>
-                        <li class="nav_li"><a class="nav_li_a" href="../unterseiten/aktuelles.html">Aktuelles</a></li>
-                        <li class="nav_li"><a class="nav_li_a" href="../unterseiten/kontakt.html">Kontakt</a></li>
-                        <li class="nav_li"><a class="nav_li_a" href="../unterseiten/links.html">Links</a></li>
-                        <li class="nav_li"><a class="nav_li_a" href="../unterseiten/angehörigen.html">Angehörigen</a>
+                        <li class="nav-li"><a class="nav-li-a" href="../index.html">Start</a></li>
+                        <li class="nav-li"><a class="nav-li-a" href="../unterseiten/aktuelles.html">Aktuelles</a></li>
+                        <li class="nav-li"><a class="nav-li-a" href="../unterseiten/kontakt.html">Kontakt</a></li>
+                        <li class="nav-li"><a class="nav-li-a" href="../unterseiten/links.html">Links</a></li>
+                        <li class="nav-li"><a class="nav-li-a" href="../unterseiten/angehörigen.html">Angehörigen</a>
                         </li>
                     </ul>
                 </nav>
@@ -37,11 +37,10 @@
     </header>
     <div id="page-content">
         <div class="content-wrap">
-            <div class="headline"></div>
-            <div class="headline_text">
+            <div class="headline-text">
                 <h1>Impressum</h1>
             </div>
-            <div id="impressum" class="impressum">
+            <div class="datenschutz-container">
 
 
                 <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
@@ -111,19 +110,19 @@
                 </p>
             </div>
             <footer>
-                <div class="footer_container">
-                    <div class="footer_logo_container">
-                        <a class="footer_logo" href="../index.html"> <img src="../assets/images/Trocken_Anker.png" alt="Trocken Anker Logo"></a>
+                <div class="footer-container">
+                    <div class="footer-logo-container">
+                        <a class="footer-logo" href="../index.html"> <img src="../assets/images/Trocken_Anker.png" alt="Trocken Anker Logo"></a>
                     </div>
 
-                    <div class="footer_ul">
-                        <li class="footer_li"><a class="footer_li_a" href="../unterseiten/impressum.html">Impressum </a>
+                    <div class="footer-ul">
+                        <li class="footer-li"><a class="footer-li-a" href="../unterseiten/impressum.html">Impressum </a>
                         </li>
-                        <li class="footer_li"><a class="footer_li_a" href="../unterseiten/datenschutz.html">Datenschutz
+                        <li class="footer-li"><a class="footer-li-a" href="../unterseiten/datenschutz.html">Datenschutz
                             </a>
                         </li>
                     </div>
-                    <div class="copy_by">
+                    <div class="copy-by">
                         <span>&copy; Trocken Anker 2020</span>
                     </div>
                 </div>
@@ -131,17 +130,6 @@
         </div>
     </div>
     <script src="../assets/js/global.min.js"></script>
-    <script>
-        var hamburger = document.querySelector(".hamburg");
-        hamburger.onclick = function () {
-            if (this.classList.toggle("checked")) {
-                $("nav").toggle("nav");
-            } else {
-                $("nav").css("display", "none");
-            }
-        }
-
-    </script>
 
 </body>
 

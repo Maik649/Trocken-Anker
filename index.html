@@ -8,28 +8,25 @@
     <meta name="google-site-verification" content="38cUorPPxWwcVE0V48T6uS_29vdMnRC-0_X_lJaXaU8" />
     <title>Start</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
-        </script>
 </head>
 
-<body>
+<body onload="init()">
     <header class="scroll_nav">
         <div class="header-content-wrap">
-            <a class="logo_container" href="../index.html"></a>
-            <div class="navi_container">
-                <div class="hamburg">
+            <a class="logo-container" href="../index.html"></a>
+            <div class="navi-container">
+                <div class="hamburg" onclick="openNav()">
                     <span class="line"></span>
                     <span class="line"></span>
                     <span class="line"></span>
                 </div>
                 <nav>
                     <ul class="ul">
-                        <li class="nav_li"><a class="nav_li_a" href="../index.html">Start</a></li>
-                        <li class="nav_li"><a class="nav_li_a" href="../unterseiten/aktuelles.html">Aktuelles</a></li>
-                        <li class="nav_li"><a class="nav_li_a" href="../unterseiten/kontakt.html">Kontakt</a></li>
-                        <li class="nav_li"><a class="nav_li_a" href="../unterseiten/links.html">Links</a></li>
-                        <li class="nav_li"><a class="nav_li_a" href="../unterseiten/angehörigen.html">Angehörigen</a>
+                        <li class="nav-li"><a class="nav-li-a" href="../index.html">Start</a></li>
+                        <li class="nav-li"><a class="nav-li-a" href="../unterseiten/aktuelles.html">Aktuelles</a></li>
+                        <li class="nav-li"><a class="nav-li-a" href="../unterseiten/kontakt.html">Kontakt</a></li>
+                        <li class="nav-li"><a class="nav-li-a" href="../unterseiten/links.html">Links</a></li>
+                        <li class="nav-li"><a class="nav-li-a" href="../unterseiten/angehörigen.html">Angehörigen</a>
                         </li>
                     </ul>
                 </nav>
@@ -37,14 +34,14 @@
         </div>
     </header>
     <div id="page-content">
-        <div class="backround_container">
+        <div class="backround-container">
             <div class="content-wrap">
-                <section class="info_container">
-                    <div class="headline_text">
+                <section class="info-container">
+                    <div class="headline-text">
                         <h1>Trocken Anker</h1>
                     </div>
 
-                    <article class="info_text_container">
+                    <article class="info-text-container">
                         <h2>Der Trocken Anker</h2>
                         <p><strong>ist eine Freie Selbsthilfegruppe.</strong></p>
                         <p>die für Sucht-erkrankte die an Alkohol, Medikamente, Drogen und Polytox süchtig Leiden bzw.
@@ -54,25 +51,25 @@
                             Leben führen zu wollen, Hilfestellung zu geben.
                             Unser Motto: Hilfe durch Selbsthilfe.</p>
                         <p><strong> Das Heißt! </strong></p>
-                        <p>Bei uns finden wöchentliche Gruppentreffen statt, wo sich Mitglieder über ihr Befinden ihre
+                        <p>Bei uns finden wöchentliche Gruppentreffen statt, wo sich Mitglieder über ihr Befinden, ihre
                             Ängste oder Alltagsprobleme austauschen können.</p>
-                        <div class="buttons_container">
+                        <div class="buttons-container">
                             <a class="primary-btn" href="../unterseiten/info.html">Mehr Lesen</a>
                         </div>
                     </article>
 
-                    <div class="cockie_container" id="cockie_container_id">
-                        <div class="cockie_headline">
+                    <div class="cockie-container" id="cockie-container-id">
+                        <div class="cockie-headline">
                             <p>Cookie Hinweis</p>
-                            <div class="cockie_text">
+                            <div class="cockie-text">
                                 <p>Wir verwenden Cookies, um Ihnen das beste Nutzererlebnis bieten zu können. Wenn Sie
                                     fortfahren, diese Seite zu verwenden, nehmen wir an, dass Sie damit einverstanden
                                     sind.
                                 </p>
                             </div>
-                            <div class="cockie_button_container">
-                                <button class="cockie_button" id="cockie_button_ok">OK</button>
-                                <button class="cockie_button" id="cockie_button_löschen">Cancel</button>
+                            <div class="cockie-button-container">
+                                <button class="primary-btn " id="cockie-button-ok">OK</button>
+                                <button class="primary-btn " id="cockie-button-cancel">Cancel</button>
                             </div>
                         </div>
                     </div>
@@ -84,17 +81,17 @@
 
 
     <footer>
-        <div class="footer_container">
-            <div class="footer_logo_container">
-                <a class="footer_logo" href="../index.html"> <img src="./assets/images/Trocken_Anker.png" alt="Trocken Anker Logo"></a>
+        <div class="footer-container">
+            <div class="footer-logo-container">
+                <a class="footer-logo" href="../index.html"> <img src="./assets/images/Trocken_Anker.png" alt="Trocken Anker Logo"></a>
             </div>
 
-            <div class="footer_ul">
-                <li class="footer_li"><a class="footer_li_a" href="../unterseiten/impressum.html">Impressum </a></li>
-                <li class="footer_li"><a class="footer_li_a" href="../unterseiten/datenschutz.html">Datenschutz </a>
+            <div class="footer-ul">
+                <li class="footer-li"><a class="footer-li-a" href="../unterseiten/impressum.html">Impressum </a></li>
+                <li class="footer-li"><a class="footer-li-a" href="../unterseiten/datenschutz.html">Datenschutz </a>
                 </li>
             </div>
-            <div class="copy_by">
+            <div class="copy-by">
                 <span>&copy; Trocken Anker 2020</span>
             </div>
         </div>

@@ -13,23 +13,23 @@
         </script>
 </head>
 
-<body>
-    <header class="scroll_nav">
+<body onload="init()">
+    <header class="scroll-nav">
         <div class="header-content-wrap">
-            <a class="logo_container" href="../index.html"></a>
-            <div class="navi_container">
-                <div class="hamburg">
+            <a class="logo-container" href="../index.html"></a>
+            <div class="navi-container">
+                <div class="hamburg" onclick="openNav()">
                     <span class="line"></span>
                     <span class="line"></span>
                     <span class="line"></span>
                 </div>
                 <nav>
                     <ul class="ul">
-                        <li class="nav_li"><a class="nav_li_a" href="../index.html">Start</a></li>
-                        <li class="nav_li"><a class="nav_li_a" href="../unterseiten/aktuelles.html">Aktuelles</a></li>
-                        <li class="nav_li"><a class="nav_li_a" href="../unterseiten/kontakt.html">Kontakt</a></li>
-                        <li class="nav_li"><a class="nav_li_a" href="../unterseiten/links.html">Links</a></li>
-                        <li class="nav_li"><a class="nav_li_a" href="../unterseiten/angehörigen.html">Angehörigen</a>
+                        <li class="nav-li"><a class="nav-li-a" href="../index.html">Start</a></li>
+                        <li class="nav-li"><a class="nav-li-a" href="../unterseiten/aktuelles.html">Aktuelles</a></li>
+                        <li class="nav-li"><a class="nav-li-a" href="../unterseiten/kontakt.html">Kontakt</a></li>
+                        <li class="nav-li"><a class="nav-li-a" href="../unterseiten/links.html">Links</a></li>
+                        <li class="nav-li"><a class="nav-li-a" href="../unterseiten/angehörigen.html">Angehörigen</a>
                         </li>
                     </ul>
                 </nav>
@@ -37,28 +37,28 @@
         </div>
     </header>
     <div id="page-content">
-        <div class="backround_container_2">
+        <div class="backround-container-2">
             <div class="content-wrap">
-                <section class="info_container">
-                    <div class="headline_text">
+                <section class="info-container">
+                    <div class="headline-text">
                         <h1>Kontakt</h1>
                     </div>
-                    <div class="info_text_container_2">
-                        <div class="kontakt_anschrift_container">
+                    <div class="info-text-container-2">
+                        <div class="kontakt-anschrift-container">
                             <label><strong>Anschrift:</strong></label>
                             <br />
                             <p>Trocken Anker <br /><br />
                                 Mühlenstrasse 22-26 <br />
                                 16321 Bernau bei Berlin</p>
                         </div>
-                        <div class="kontakt_ansprechpart_container">
+                        <div class="kontakt-ansprechpartner-container">
                             <label><strong>Ansprechpartner:</strong></label>
                         </div>
-                        <div class="kontakt_email_container">
-                            <p class="icon_p"><img class="icon_mail" src="../assets/images/envelope.png"
+                        <div class="kontakt-icon-container">
+                            <p class="icon-p"><img class="icons" src="../assets/images/envelope.png"
                                     alt="Trocken Anker Selbsthilfegruppe"> <a href="mailto:"></a></p>
-                            <p class="icon_tel"><img src="../assets/images/phone-call.png"
-                                    alt="Trocken Anker Selbsthilfegruppe" /></p>
+                            <p class="icon-p">
+                                <img class="icons" src="../assets/images/phone-call.png" alt="Trocken Anker Selbsthilfegruppe" /></p>
                         </div>
                     </div>
                 </section>
@@ -66,33 +66,20 @@
         </div>
     </div>
     <footer>
-        <div class="footer_container">
-            <div class="footer_logo_container">
-               <a class="footer_logo" href="../index.html"> <img src="../assets/images/Trocken_Anker.png" alt="Trocken Anker Logo"></a>
+        <div class="footer-container">
+            <div class="footer-logo-container">
+               <a class="footer-logo" href="../index.html"> <img src="../assets/images/Trocken_Anker.png" alt="Trocken Anker Logo"></a>
             </div>
 
-            <div class="footer_ul">
-                <li class="footer_li"><a class="footer_li_a" href="../unterseiten/impressum.html">Impressum </a>
-                </li>
-                <li class="footer_li"><a class="footer_li_a" href="../unterseiten/datenschutz.html">Datenschutz
-                    </a>
-                </li>
+            <div class="footer-ul">
+                <li class="footer-li"><a class="footer-li-a" href="../unterseiten/impressum.html">Impressum</a></li>
+                <li class="footer-li"><a class="footer-li-a" href="../unterseiten/datenschutz.html">Datenschutz</a></li>
             </div>
-            <div class="copy_by">
+            <div class="copy-by">
                 <span>&copy; Trocken Anker 2020</span>
             </div>
         </div>
     </footer>
     <script src="../assets/js/global.min.js"></script>
-    <script>
-        var hamburger = document.querySelector(".hamburg");
-        hamburger.onclick = function () {
-            if (this.classList.toggle("checked")) {
-                $("nav").toggle("nav");
-            } else {
-                $("nav").css("display", "none");
-            }
-        }
-    </script>
 </body>
 </html>

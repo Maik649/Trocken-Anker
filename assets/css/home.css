@@ -1,10 +1,10 @@
-.trocken_a {
+.trocken-a {
     top: 50px;
     position: relative;
     font-size: 24px;
 }
 
-.info_container {
+.info-container {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -17,13 +17,25 @@
 
 
 @media only screen and (max-width: 568px) {
-    .info_container {
+    .info-container {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 20px;
         margin: 0 auto;
         text-align: center;
-        height: 100vh;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .info-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+        margin: 0 auto;
+        text-align: center;
+        height: 100%;
     }
 }

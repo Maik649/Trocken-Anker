@@ -20,73 +20,34 @@
     text-align: left;
 }
 
-
-.icon_mail {
-    position: relative;
+.icons {
     height: 20px;
     width: 20px;
-    top: 6px;
-    left: -10px;
 }
 
-.icon_tel {
-    position: relative;
-    height: 20px;
-    width: 20px;
-    top: 6px;
-    left: -10px;
-}
-
-.icon_p {
-    position: relative;
-    height: 35px;
+.icon-p {
+    height: auto;
     width: auto;
-    margin: auto 0;
+    margin: 10px 0;
 }
 
 
 /*        ------------------ Kontakt Seiten Content ------------------------        */
-.konatkt_container {
-    margin: 0 0 0 0;
+.kontakt-container {
+    margin: 0 auto;
     transform: translate(3%);
     top: 22%;
     height: auto;
     width: 40%;
     text-align: left;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     background-color: rgba(217, 220, 223, 0.774);
     box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.75);
 }
 
-.person-card-1 {
-    position: relative;
-    margin: 30px 0 0 0;
-}
-
-.person-card-2 {
-    position: relative;
-    margin: 30px 0 0 0;
-}
-
-#foto_andi {
-    display: block;
-    position: relative;
-    width: 100px;
-    height: 130px;
-    padding: 9px;
-}
-
-#foto_ich2 {
-    display: block;
-    position: relative;
-    width: 100px;
-    height: 130px;
-    padding: 9px;
-}
-
-.kontakt_email_container {
+.kontakt-icon-container {
     position: relative;
     width: 50%;
     height: 25%;
@@ -97,7 +58,7 @@
 /*        ------------------End Kontakt Seiten Content ------------------------        */
 /*        ------------------Info Seiten Content ------------------------        */
 
-.angehörigen_text_container {
+.angehörigen-text-container {
     position: absolute;
     text-align: left;
     width: 45%;
@@ -139,7 +100,7 @@ ol {
     -webkit-box-shadow: 5px 2px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
-#info_regeln {
+#info-regeln {
     list-style: decimal;
     background-color: transparent;
     border: none;
@@ -147,10 +108,12 @@ ol {
     width: 90%;
     height: auto;
     margin: 0 auto;
+    padding: 0 10px;
 
-    li {
-        margin: 20px 0 20px 0;
-    }
+}
+
+#info-regeln li {
+    margin: 20px 0 20px 0;
 }
 
 
@@ -196,12 +159,12 @@ ol {
     align-items: center;
 }
 
-.info_text {
+.info-text {
     width: 100%;
     max-width: 600px;
 }
 
-.info_text_container {
+.info-text-container {
     margin: auto auto;
     height: auto;
     width: 90%;
@@ -213,7 +176,7 @@ ol {
     -webkit-box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.75);
 }
 
-.info_text_container_2 {
+.info-text-container-2 {
     margin: auto 0px;
     height: auto;
     width: 35%;
@@ -229,28 +192,17 @@ ol {
 
 /*        ------------------------- Footer Content ------------------------------        */
 
-.datenschutz_container {
-    display: inline-block;
-    position: relative;
+.datenschutz-container {
     text-align: left;
-    margin: 50px 0 0 10px;
-    padding: 30px;
+    padding: 15px 15px;
+    background: linear-gradient(rgba(217, 220, 223, 0.774), rgba(217, 220, 223, 0.774));
 }
 
-.datenschutz_ul {
-    display: inline-block;
-    position: relative;
+.datenschutz-ul {
+    padding: 10px 20px;
 }
 
-.impressum {
-    display: inline-block;
-    position: relative;
-    text-align: left;
-    margin: 50px 0 0 10px;
-    padding: 30px;
-}
-
-.cockie_container {
+.cockie-container {
     border: solid 1px black;
     background-color: rgb(165, 165, 165);
     position: absolute;
@@ -262,28 +214,12 @@ ol {
     padding: 10px;
 }
 
-.cockie_button_container {
+.cockie-button-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     margin-top: 10px;
-}
-
-.cockie_button {
-    height: 30px;
-    width: 100px;
-    padding: 5px;
-    border-radius: 5px;
-    background-color: rgba(116, 114, 114, 0.575);
-    top: 50px;
-    left: 45px;
-}
-
-.cockie_button:hover {
-    background-color: rgba(255, 255, 255, 0.575);
-    transition: 0.35s;
-    cursor: pointer;
 }
 
 /*        -------------------- End Footer Content ------------------------------        */
@@ -313,7 +249,7 @@ ol {
 }
 
 @media only screen and (max-width: 995px) {
-    .info_text_container_2 {
+    .info-text-container-2 {
         margin-left: auto;
         margin-right: auto;
     }
@@ -321,9 +257,9 @@ ol {
 
 
 @media only screen and (max-width: 768px) {
-    .info_text_container {
-        width: 88%;
-        padding: 5px;
+    .info-text-container {
+        width: 80%;
+        padding: 0 15px;
     }
 
     .ol {
@@ -333,12 +269,12 @@ ol {
 
 
 @media only screen and (max-width: 568px) {
-    .info_text_container_2 {
+    .info-text-container-2 {
         width: 80%;
         padding: 5px;
     }
 
-    .cockie_container {
+    .cockie-container {
         border: solid 1px black;
         background-color: rgb(165, 165, 165);
         position: absolute;
@@ -348,5 +284,23 @@ ol {
         left: 50%;
         transform: translate(-50%, 0%);
         padding: 10px;
+    }
+
+    #info-regeln {
+        margin: unset;
+        padding: 0 10px;
+
+        li {
+            margin: 20px 0 20px 0;
+        }
+    }
+
+    .cockie-button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
     }
 }
